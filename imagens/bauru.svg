@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 180" role="img" aria-labelledby="title">
+  <title id="title">Ilustração de Bauru, São Paulo</title>
+  <rect width="300" height="180" fill="#e7eef2"/>
+  <circle cx="238" cy="42" r="22" fill="#f2c14e"/>
+  <path d="M0 126h300v54H0z" fill="#9ab6a0"/>
+  <path d="M30 126V78h52v48M92 126V56h61v70M163 126V88h45v38M218 126V68h54v58" fill="#416b83"/>
+  <path d="M42 91h10v13H42zm22 0h10v13H64zm41-20h11v14h-11zm21 0h11v14h-11zm-21 25h11v14h-11zm21 0h11v14h-11zm60 1h10v12h-10zm42-17h11v14h-11zm21 0h11v14h-11z" fill="#fff"/>
+  <text x="150" y="160" fill="#263746" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle">BAURU - SP</text>
+</svg>

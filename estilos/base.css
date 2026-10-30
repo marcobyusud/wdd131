@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+.course-title {
+  padding: 10px 16px;
+  background-color: #204f70;
+  color: #fff;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+}
+
+nav a {
+  padding: 7px 16px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  background-color: #f2c14e;
+  color: #222;
+}
+
+main {
+  width: min(100% - 32px, 960px);
+  margin: 20px auto 16px;
+}
+
+h1 {
+  margin: 0 0 14px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 8px;
+}
+
+.card {
+  overflow: hidden;
+  border: 1px solid #aaa;
+  border-radius: 9px;
+}
+
+.card h2 {
+  margin: 0;
+  padding: 7px 12px;
+  background-color: #204f70;
+  color: #fff;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.about-card .card-content {
+  min-height: 380px;
+}
+
+.profile-image {
+  float: right;
+  width: 122px;
+  height: 138px;
+  margin: 0 0 12px 18px;
+  border: 1px solid #aaa;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.about-card p {
+  margin: 8px 0 12px;
+}
+
+.about-card h3 {
+  clear: both;
+  width: 65%;
+  margin: 14px 0 10px;
+  border-bottom: 1px solid #aaa;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.location {
+  display: grid;
+  grid-template-columns: 145px 1fr;
+  gap: 12px;
+  align-items: center;
+}
+
+.location figure {
+  margin: 0;
+  text-align: center;
+}
+
+.location img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #aaa;
+}
+
+.location figcaption {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.company-links {
+  display: flex;
+  min-height: 380px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-logo-link {
+  width: fit-content;
+  margin: 0 auto 12px;
+}
+
+.company-links p {
+  margin: 0 0 12px;
+}
+
+.linkedin-link {
+  align-self: flex-start;
+}
+
+.project-logo {
+  display: block;
+  width: 133px;
+  height: 62px;
+  object-fit: contain;
+}
+
+footer {
+  margin-top: auto;
+  padding: 12px 16px 8px;
+  background-color: #204f70;
+  color: #fff;
+  text-align: center;
+}
+
+footer p {
+  margin: 2px 0;
+}
+
+#ultimaModificacao {
+  color: #ffeb3b;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 650px) {
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    flex: 1 1 50%;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .about-card .card-content,
+  .company-links {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .location {
+    grid-template-columns: 1fr;
+  }
+
+  .location figure {
+    max-width: 180px;
+    margin: 0 auto;
+  }
+}
